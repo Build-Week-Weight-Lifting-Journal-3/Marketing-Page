@@ -1,0 +1,50 @@
+// HEADER
+.fadeIn(@dir, @color1, @color2) {
+  background: linear-gradient(@dir, @color1, @color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// MAIN CONTENT
+.features-cont(@top, @right, @bottom) {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: @top;
+  padding-right: @right;
+  padding-bottom: @bottom;
+}
+.section-cont() {
+  display: flex;
+  border-radius: 30px;
+}
+.div-cont() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 40%;
+  padding: 5rem 2rem;
+  border-top: solid 3px @main-accent;
+  border-right: solid 3px @main-accent;
+  border-bottom: solid 3px @main-accent;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 700px;
+  background-color: @main-bg;
+}
+.div-cont2() {
+  width: 60%;
+  border-top: solid 3px @main-accent;
+  border-left: solid 3px @main-accent;
+  border-bottom: solid 3px @main-accent;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 700px;
+}
+.list-style() {
+  margin-top: 3rem;
+  list-style-position: outside;
+  width: 80%;
+}

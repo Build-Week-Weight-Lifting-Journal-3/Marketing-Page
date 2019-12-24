@@ -1,0 +1,115 @@
+// ENTIRE SECTION
+.middle-content-container {
+  margin: 0;
+  background-color: @main-font;
+}
+
+// TRACKER SECTION
+.tracker {
+  .features-cont(10rem, 0, 10rem);
+
+  .section-container {
+    .section-cont();
+
+    .text-container {
+      .div-cont();
+
+      h2 {
+        text-align: center;
+      }
+      .summary {
+        margin-top: 2rem;
+        text-align: justify;
+        width: 90%;
+      }
+      ul {
+        .list-style();
+
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .img-container {
+      .div-cont2();
+      background: url(../imgs/fitness-man-tanktop.jpg) no-repeat left top fixed;
+      background-size: cover;
+    }
+  }
+}
+
+// ROUTINE SECTION
+.routines {
+  .features-cont(0, 0, 10rem);
+
+  .section-container {
+    .section-cont();
+
+    .text-container {
+      .div-cont();
+
+      h2 {
+        text-align: center;
+      }
+      ul {
+        .list-style();
+
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .img-container {
+      .div-cont2();
+      background: url(../imgs/fitness-woman.jpg) no-repeat left center fixed;
+      background-size: contain;
+    }
+  }
+}
+
+// MEAL PLAN SECTION
+.meal-plans {
+  .features-cont(0, 0, 10rem);
+
+  .section-container {
+    .section-cont();
+
+    .text-container {
+      .div-cont();
+
+      .premium {
+        display: flex;
+        justify-content: flex-end;
+        width: 90%;
+        color: @premium;
+
+        p {
+          color: @premium;
+          padding-left: 1rem;
+          text-transform: uppercase;
+        }
+      }
+      h2 {
+        text-align: center;
+      }
+      .summary {
+        margin-top: 2rem;
+        text-align: justify;
+        width: 90%;
+
+      }
+      ul {
+        .list-style();
+
+        li {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .img-container {
+      .div-cont2();
+      background: url(../imgs/meal-plan.jpg) no-repeat left center fixed;
+      background-size: cover;
+    }
+  }
+}

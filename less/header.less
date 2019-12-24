@@ -1,0 +1,74 @@
+.cto {
+  height: 94vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: @main-bg;
+
+  h1 {
+    text-transform: uppercase;
+    color: @main-accent;
+
+    #fade1 {
+      font-size: 2.5rem;
+      .fadeIn(to right, @fadein1, @fadein2);
+    }
+    #fade2 {
+      font-size: 3.5rem;
+      .fadeIn(to right, @fadein2, @fadein3);
+    }
+    #fade3 {
+      font-size: 5rem;
+      .fadeIn(to right, @fadein3, @fadein4);
+    }
+    #fade4 {
+      font-size: 5rem;
+      .fadeIn(to left, @fadein3, @fadein4);
+    }
+    #fade5 {
+      font-size: 3.5rem;
+      .fadeIn(to left, @fadein2, @fadein3);
+    }
+    #fade6 {
+      font-size: 2.5rem;
+      .fadeIn(to left, @fadein1, @fadein2);
+    }
+  }
+  h2 {
+    padding: 3rem 0;
+    color: @main-font;
+  }
+  #cto-statement {
+    padding: 8rem 0 5rem;
+    font-size: 2rem;
+
+    span {
+      font-size: 2rem;
+      color: @main-accent;
+    }
+  }
+  .cto-btn {
+    text-decoration: none;
+    border: solid 1px @main-accent;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    color: @main-accent;
+
+    &:hover {
+      background-color: @hover-bg;
+      color: @hover-font;
+      border-color: @hover-font;
+    }
+  }
+  .login {
+    color: @main-accent;
+    padding-top: 1rem;
+
+    &:hover {
+      color: @hover-font;
+    }
+  }
+}

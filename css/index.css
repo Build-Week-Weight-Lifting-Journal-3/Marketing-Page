@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  background-color: #121212;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+}
+h1 {
+  font-size: 7rem;
+  letter-spacing: 3px;
+}
+h2 {
+  font-size: 3rem;
+  font-family: 'Inria Serif', serif;
+  color: #8B0000;
+}
+h3 {
+  font-size: 2.5rem;
+  color: #8B0000;
+  text-transform: uppercase;
+}
+p,
+a,
+span,
+ul {
+  font-size: 1.5rem;
+  color: #FFFAF0;
+}
+.cto {
+  height: 94vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #121212;
+}
+.cto h1 {
+  text-transform: uppercase;
+  color: #8B0000;
+}
+.cto h1 #fade1 {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #1f1f1f, #4b3030);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cto h1 #fade2 {
+  font-size: 3.5rem;
+  background: linear-gradient(to right, #4b3030, #732222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cto h1 #fade3 {
+  font-size: 5rem;
+  background: linear-gradient(to right, #732222, #8B0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cto h1 #fade4 {
+  font-size: 5rem;
+  background: linear-gradient(to left, #732222, #8B0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cto h1 #fade5 {
+  font-size: 3.5rem;
+  background: linear-gradient(to left, #4b3030, #732222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cto h1 #fade6 {
+  font-size: 2.5rem;
+  background: linear-gradient(to left, #1f1f1f, #4b3030);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cto h2 {
+  padding: 3rem 0;
+  color: #FFFAF0;
+}
+.cto #cto-statement {
+  padding: 8rem 0 5rem;
+  font-size: 2rem;
+}
+.cto #cto-statement span {
+  font-size: 2rem;
+  color: #8B0000;
+}
+.cto .cto-btn {
+  text-decoration: none;
+  border: solid 1px #8B0000;
+  border-radius: 5px;
+  padding: 1rem 3rem;
+  color: #8B0000;
+}
+.cto .cto-btn:hover {
+  background-color: #242424;
+  color: #b60000;
+  border-color: #b60000;
+}
+.cto .login {
+  color: #8B0000;
+  padding-top: 1rem;
+}
+.cto .login:hover {
+  color: #b60000;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgba(18, 18, 18, 0.9);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+}
+nav h3 {
+  padding-left: 2rem;
+}
+nav h3 #nav-fade1 {
+  font-size: 1rem;
+  background: linear-gradient(to right, #1f1f1f, #4b3030);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav h3 #nav-fade2 {
+  font-size: 1.5rem;
+  background: linear-gradient(to right, #4b3030, #732222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav h3 #nav-fade3 {
+  font-size: 2rem;
+  background: linear-gradient(to right, #732222, #8B0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav h3 #nav-fade4 {
+  font-size: 2rem;
+  background: linear-gradient(to left, #732222, #8B0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav h3 #nav-fade5 {
+  font-size: 1.5rem;
+  background: linear-gradient(to left, #4b3030, #732222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav h3 #nav-fade6 {
+  font-size: 1rem;
+  background: linear-gradient(to left, #1f1f1f, #4b3030);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav .navbar {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  letter-spacing: 2px;
+}
+nav .navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #8B0000;
+}
+nav .navbar a:hover {
+  color: #b60000;
+}
+nav .navbar #sign-up {
+  text-decoration: none;
+  border: solid 1px #8B0000;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  color: #8B0000;
+  align-items: flex-start;
+}
+nav .navbar #sign-up:hover {
+  background-color: #242424;
+  color: #b60000;
+  border-color: #b60000;
+}
+.middle-content-container {
+  margin: 0;
+  background-color: #FFFAF0;
+}
+.tracker {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-right: 0;
+  padding-bottom: 10rem;
+}
+.tracker .section-container {
+  display: flex;
+  border-radius: 30px;
+}
+.tracker .section-container .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 5rem 2rem;
+  border-top: solid 3px #8B0000;
+  border-right: solid 3px #8B0000;
+  border-bottom: solid 3px #8B0000;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 700px;
+  background-color: #121212;
+}
+.tracker .section-container .text-container h2 {
+  text-align: center;
+}
+.tracker .section-container .text-container .summary {
+  margin-top: 2rem;
+  text-align: justify;
+  width: 90%;
+}
+.tracker .section-container .text-container ul {
+  margin-top: 3rem;
+  list-style-position: outside;
+  width: 80%;
+}
+.tracker .section-container .text-container ul li {
+  margin-bottom: 1rem;
+}
+.tracker .section-container .img-container {
+  width: 60%;
+  border-top: solid 3px #8B0000;
+  border-left: solid 3px #8B0000;
+  border-bottom: solid 3px #8B0000;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 700px;
+  background: url(../imgs/fitness-man-tanktop.jpg) no-repeat left top fixed;
+  background-size: cover;
+}
+.routines {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 10rem;
+}
+.routines .section-container {
+  display: flex;
+  border-radius: 30px;
+}
+.routines .section-container .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 5rem 2rem;
+  border-top: solid 3px #8B0000;
+  border-right: solid 3px #8B0000;
+  border-bottom: solid 3px #8B0000;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 700px;
+  background-color: #121212;
+}
+.routines .section-container .text-container h2 {
+  text-align: center;
+}
+.routines .section-container .text-container ul {
+  margin-top: 3rem;
+  list-style-position: outside;
+  width: 80%;
+}
+.routines .section-container .text-container ul li {
+  margin-bottom: 1rem;
+}
+.routines .section-container .img-container {
+  width: 60%;
+  border-top: solid 3px #8B0000;
+  border-left: solid 3px #8B0000;
+  border-bottom: solid 3px #8B0000;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 700px;
+  background: url(../imgs/fitness-woman.jpg) no-repeat left center fixed;
+  background-size: contain;
+}
+.meal-plans {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 10rem;
+}
+.meal-plans .section-container {
+  display: flex;
+  border-radius: 30px;
+}
+.meal-plans .section-container .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding: 5rem 2rem;
+  border-top: solid 3px #8B0000;
+  border-right: solid 3px #8B0000;
+  border-bottom: solid 3px #8B0000;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 700px;
+  background-color: #121212;
+}
+.meal-plans .section-container .text-container .premium {
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  color: #DAA520;
+}
+.meal-plans .section-container .text-container .premium p {
+  color: #DAA520;
+  padding-left: 1rem;
+  text-transform: uppercase;
+}
+.meal-plans .section-container .text-container h2 {
+  text-align: center;
+}
+.meal-plans .section-container .text-container .summary {
+  margin-top: 2rem;
+  text-align: justify;
+  width: 90%;
+}
+.meal-plans .section-container .text-container ul {
+  margin-top: 3rem;
+  list-style-position: outside;
+  width: 80%;
+}
+.meal-plans .section-container .text-container ul li {
+  margin-bottom: 1rem;
+}
+.meal-plans .section-container .img-container {
+  width: 60%;
+  border-top: solid 3px #8B0000;
+  border-left: solid 3px #8B0000;
+  border-bottom: solid 3px #8B0000;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  height: 700px;
+  background: url(../imgs/meal-plan.jpg) no-repeat left center fixed;
+  background-size: cover;
+}
+footer {
+  padding: 5rem 0;
+  text-align: center;
+}
