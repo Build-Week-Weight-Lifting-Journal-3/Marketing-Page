@@ -1,16 +1,25 @@
-@main-bg: #121212;
-@main-font: #FFFAF0;
+@main-bg: #030303;
+@main-font: @main-bg;
 @main-accent: #8B0000;
+@secondary-bg-1: #FFFAF0;
+@secondary-bg-2: #dfdbd3;
 
 // Hovers
-@hover-bg: #242424;
-@hover-font: #b60000;
+@hover-bg: #080808;
+@hover-font: #c60000;
 
 // Header Specific
-@fadein1: #1f1f1f;
-@fadein2: #4b3030;
+@header-font: @secondary-bg-1;
+@fadein1: #0f0f0f;
+@fadein2: #332424;
 @fadein3: #732222;
 @fadein4: #8B0000;
 
 // Premium Upgrades
 @premium: #DAA520;
+
+// Media Queries
+@sm-comp: ~"(max-width: 1500px)";
+@lg-tablet: ~"(max-width: 1000px)";
+@tablet: ~"(max-width: 800px)";
+@mobile: ~"(max-width: 500px)";
