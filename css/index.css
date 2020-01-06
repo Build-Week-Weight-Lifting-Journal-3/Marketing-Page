@@ -499,6 +499,22 @@ nav .navbar #sign-up:hover {
   padding-right: 0;
   padding-bottom: 8rem;
 }
+@media (max-width: 1000px) {
+  .tracker {
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .tracker {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .tracker {
+    width: 100%;
+    padding: 0;
+  }
+}
 .tracker .section-container {
   display: flex;
   border-radius: 30px;
@@ -517,6 +533,13 @@ nav .navbar #sign-up:hover {
   border-bottom-right-radius: 30px;
   height: 700px;
   background-color: #FFFAF0;
+}
+@media (max-width: 1000px) {
+  .tracker .section-container .text-container {
+    width: 100%;
+    border-style: none;
+    border-radius: 0;
+  }
 }
 .tracker .section-container .text-container h2 {
   text-align: center;
@@ -544,6 +567,11 @@ nav .navbar #sign-up:hover {
   background: url(../imgs/fitness-man-tanktop.jpg) no-repeat right top fixed;
   background-size: cover;
 }
+@media (max-width: 1000px) {
+  .tracker .section-container .img-container {
+    display: none;
+  }
+}
 .routines {
   width: 80%;
   display: block;
@@ -551,6 +579,22 @@ nav .navbar #sign-up:hover {
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 8rem;
+}
+@media (max-width: 1000px) {
+  .routines {
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .routines {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .routines {
+    width: 100%;
+    padding: 0;
+  }
 }
 .routines .section-container {
   display: flex;
@@ -570,6 +614,13 @@ nav .navbar #sign-up:hover {
   border-bottom-right-radius: 30px;
   height: 700px;
   background-color: #FFFAF0;
+}
+@media (max-width: 1000px) {
+  .routines .section-container .text-container {
+    width: 100%;
+    border-style: none;
+    border-radius: 0;
+  }
 }
 .routines .section-container .text-container h2 {
   text-align: center;
@@ -592,6 +643,11 @@ nav .navbar #sign-up:hover {
   background: url(../imgs/couple-jogging.jpg) no-repeat left center fixed;
   background-size: contain;
 }
+@media (max-width: 1000px) {
+  .routines .section-container .img-container {
+    display: none;
+  }
+}
 .meal-plans {
   width: 80%;
   display: block;
@@ -599,6 +655,22 @@ nav .navbar #sign-up:hover {
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 10rem;
+}
+@media (max-width: 1000px) {
+  .meal-plans {
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .meal-plans {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .meal-plans {
+    width: 100%;
+    padding: 0;
+  }
 }
 .meal-plans .section-container {
   display: flex;
@@ -618,6 +690,13 @@ nav .navbar #sign-up:hover {
   border-bottom-right-radius: 30px;
   height: 700px;
   background-color: #FFFAF0;
+}
+@media (max-width: 1000px) {
+  .meal-plans .section-container .text-container {
+    width: 100%;
+    border-style: none;
+    border-radius: 0;
+  }
 }
 .meal-plans .section-container .text-container .premium {
   display: flex;
@@ -656,6 +735,160 @@ nav .navbar #sign-up:hover {
   background: url(../imgs/meal-plan2.jpg) no-repeat left bottom fixed;
   background-size: cover;
 }
+@media (max-width: 1000px) {
+  .meal-plans .section-container .img-container {
+    display: none;
+  }
+}
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+  .tracker .section-container .text-container {
+    background: url(../imgs/fitness-man-tanktop.jpg) no-repeat left bottom fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .tracker .section-container .text-container h2 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    color: #FFFAF0;
+    text-shadow: -1px -1px 0 #8B0000, 1px -1px 0 #8B0000, -1px 1px 0 #8B0000, 1px 1px 0 #8B0000;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .tracker .section-container .text-container .summary,
+  .tracker .section-container .text-container ul {
+    background-color: #030303;
+    list-style-position: inside;
+    margin: 0 auto;
+    padding: 3rem;
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .tracker .section-container .text-container .summary {
+    padding-bottom: 2rem;
+    border-top: solid 2px #030303;
+    border-right: solid 2px #030303;
+    border-left: solid 2px #030303;
+    font-size: 1.8rem;
+    color: #8B0000;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .tracker .section-container .text-container ul {
+    border-bottom: solid 2px #030303;
+    border-right: solid 2px #030303;
+    border-left: solid 2px #030303;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) and (max-width: 1000px) {
+  .tracker .section-container .text-container ul li {
+    font-size: 1.5rem;
+    color: #8B0000;
+  }
+}
+@media (max-width: 1000px) {
+  .routines .section-container .text-container {
+    background: url(../imgs/couple-jogging.jpg) no-repeat left bottom fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .routines .section-container .text-container h2 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    color: #FFFAF0;
+    text-shadow: -1px -1px 0 #8B0000, 1px -1px 0 #8B0000, -1px 1px 0 #8B0000, 1px 1px 0 #8B0000;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .routines .section-container .text-container .summary,
+  .routines .section-container .text-container ul {
+    background-color: #030303;
+    list-style-position: inside;
+    margin: 0 auto;
+    padding: 3rem;
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .routines .section-container .text-container .summary {
+    padding-bottom: 2rem;
+    border-top: solid 2px #030303;
+    border-right: solid 2px #030303;
+    border-left: solid 2px #030303;
+    font-size: 1.8rem;
+    color: #8B0000;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .routines .section-container .text-container ul {
+    border-bottom: solid 2px #030303;
+    border-right: solid 2px #030303;
+    border-left: solid 2px #030303;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) and (max-width: 1000px) {
+  .routines .section-container .text-container ul li {
+    font-size: 1.5rem;
+    color: #8B0000;
+  }
+}
+@media (max-width: 1500px) {
+  .routines .section-container .img-container {
+    background-position: right;
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+@media (max-width: 1000px) {
+  .meal-plans .section-container .text-container {
+    background: url(../imgs/meal-plan2.jpg) no-repeat left bottom fixed;
+    background-size: cover;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .meal-plans .section-container .text-container h2 {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    color: #FFFAF0;
+    text-shadow: -1px -1px 0 #8B0000, 1px -1px 0 #8B0000, -1px 1px 0 #8B0000, 1px 1px 0 #8B0000;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .meal-plans .section-container .text-container .summary,
+  .meal-plans .section-container .text-container ul {
+    background-color: #030303;
+    list-style-position: inside;
+    margin: 0 auto;
+    padding: 3rem;
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .meal-plans .section-container .text-container .summary {
+    padding-bottom: 2rem;
+    border-top: solid 2px #030303;
+    border-right: solid 2px #030303;
+    border-left: solid 2px #030303;
+    font-size: 1.8rem;
+    color: #8B0000;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) {
+  .meal-plans .section-container .text-container ul {
+    border-bottom: solid 2px #030303;
+    border-right: solid 2px #030303;
+    border-left: solid 2px #030303;
+  }
+}
+@media (max-width: 1000px) and (max-width: 1000px) and (max-width: 1000px) {
+  .meal-plans .section-container .text-container ul li {
+    font-size: 1.5rem;
+    color: #8B0000;
+  }
+}
 .team {
   width: 100%;
   background-color: #FFFAF0;
@@ -686,7 +919,7 @@ nav .navbar #sign-up:hover {
   max-width: 200px;
   padding-right: 2rem;
   padding-bottom: 2rem;
-  z-index: 10;
+  z-index: 9;
 }
 .team .team-list-box .team-list .member .img-circle {
   border-radius: 50%;

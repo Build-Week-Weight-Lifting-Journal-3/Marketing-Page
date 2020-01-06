@@ -13,6 +13,17 @@
   padding-top: @top;
   padding-right: @right;
   padding-bottom: @bottom;
+
+  @media @lg-tablet {
+    width: 85%;
+  }
+  @media @tablet {
+    width: 90%;
+  }
+  @media @mobile {
+    width: 100%;
+    padding: 0;
+  }
 }
 .section-cont() {
   display: flex;
@@ -33,6 +44,12 @@
   border-bottom-right-radius: 30px;
   height: 700px;
   background-color: @secondary-bg-1;
+
+  @media @lg-tablet {
+    width: 100%;
+    border-style: none;
+    border-radius: 0;
+  }
 }
 .div-cont2() {
   width: 58%;
@@ -40,9 +57,15 @@
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   height: 700px;
+
+  @media @lg-tablet {
+    display: none;
+  }
 }
 .list-style() {
   margin-top: 3rem;
   list-style-position: outside;
   width: 80%;
 }
+
+// MAIN CONTENT - SMALL SCREENS
