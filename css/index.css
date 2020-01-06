@@ -897,20 +897,21 @@ nav .navbar #sign-up:hover {
   border-top: solid 3px #030303;
 }
 .team .team-list-box {
-  width: 80%;
+  width: 100%;
   display: block;
   margin: 0 auto;
-  padding-left: 2rem;
 }
 .team .team-list-box h1 {
   font-variant: small-caps;
   color: #8B0000;
   font-family: 'Inria Serif', serif;
+  padding-left: 0;
 }
 .team .team-list-box .team-list {
-  width: 100%;
-  padding-top: 5rem;
-  padding-right: 2rem;
+  width: 80%;
+  padding: 5rem 0 0 2rem;
+  display: block;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -947,6 +948,38 @@ nav .navbar #sign-up:hover {
 }
 .team .team-list-box .team-list .member p {
   color: #030303;
+}
+@media (max-width: 800px) {
+  .team .team-list-box h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .team .team-list-box h1 {
+    font-size: 4.3rem;
+  }
+}
+@media (max-width: 400px) {
+  .team .team-list-box h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 325px) {
+  .team .team-list-box h1 {
+    font-size: 3.2rem;
+  }
+}
+@media (max-width: 800px) {
+  .team .team-list-box .team-list {
+    width: 100%;
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .team .team-list-box .team-list .member {
+    width: 150px;
+    padding-right: 1rem;
+  }
 }
 footer {
   padding: 10rem 0 5rem;
