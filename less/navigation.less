@@ -6,6 +6,7 @@ nav {
   padding: 1rem;
   position: sticky;
   top: 0;
+  z-index: 10;
 
   h3 {
     padding-left: 2rem;
@@ -76,5 +77,16 @@ nav {
     @media @lg-tablet {
       width: 60%;
     }
+    @media @tablet {
+      display: none;
+    }
+  }
+  h3 {
+    @media @tablet {
+      display: none;
+    }
+  }
+  @media @tablet {
+    padding: 0;
   }
 }

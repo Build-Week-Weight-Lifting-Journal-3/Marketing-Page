@@ -60,6 +60,7 @@
     border-radius: 5px;
     padding: 1rem 3rem;
     color: @main-accent;
+    z-index: 1;
 
     &:hover {
       background-color: @hover-bg;
@@ -70,6 +71,7 @@
   .login {
     color: @main-accent;
     padding-top: 1rem;
+    z-index: 1;
 
     &:hover {
       color: @hover-font;
@@ -81,7 +83,9 @@
 /* MEDIA QUERIES */
 
 .cto {
-
+  @media @tablet {
+    height: 100vh;
+  }
   h1 {
     @media @tablet {
       font-size: 6rem;
