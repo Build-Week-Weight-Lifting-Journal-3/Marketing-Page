@@ -43,6 +43,42 @@ ul {
   color: #c60000;
   border-color: #c60000;
 }
+.features {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+@media (max-width: 1000px) {
+  .features {
+    width: 85%;
+  }
+}
+@media (max-width: 800px) {
+  .features {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .features {
+    width: 100%;
+    padding: 0;
+  }
+}
+.section-container {
+  display: flex;
+  border-radius: 30px;
+}
+.content {
+  width: 100%;
+  padding: 5rem 2rem;
+  border: solid 3px #030303;
+  border-radius: 30px;
+  height: 700px;
+  background-color: #FFFAF0;
+}
 .cto {
   height: 94vh;
   width: 100%;
@@ -986,6 +1022,9 @@ footer {
   text-align: center;
   color: #030303;
   background-color: #FFFAF0;
+}
+.programs-page .features {
+  padding-bottom: 8rem;
 }
 @media (max-width: 1500px) {
   html {
