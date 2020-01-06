@@ -1,6 +1,7 @@
 .cto {
   height: 94vh;
   width: 100%;
+  max-width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -12,59 +13,32 @@
     text-transform: uppercase;
     color: @main-accent;
 
-    @media @tablet {
-      font-size: 6rem;
-    }
-
     #fade1 {
       font-size: 2.5rem;
       .fadeIn(to right, @fadein1, @fadein2);
-
-      @media @tablet {
-        font-size: 1.5rem;
-      }
     }
     #fade2 {
       font-size: 3.5rem;
       .fadeIn(to right, @fadein2, @fadein3);
-
-      @media @tablet {
-        font-size: 2.5rem;
-      }
     }
     #fade3 {
       font-size: 5rem;
       .fadeIn(to right, @fadein3, @fadein4);
-
-      @media @tablet {
-        font-size: 4rem;
-      }
     }
     #fade4 {
       font-size: 5rem;
       .fadeIn(to left, @fadein3, @fadein4);
-
-      @media @tablet {
-        font-size: 4rem;
-      }
     }
     #fade5 {
       font-size: 3.5rem;
       .fadeIn(to left, @fadein2, @fadein3);
-
-      @media @tablet {
-        font-size: 2.5rem;
-      }
     }
     #fade6 {
       font-size: 2.5rem;
       .fadeIn(to left, @fadein1, @fadein2);
-
-      @media @tablet {
-        font-size: 1.5rem;
-      }
     }
   }
+
   h2 {
     padding: 3rem 0;
     color: @header-font;
@@ -73,6 +47,7 @@
     padding: 8rem 0 5rem;
     font-size: 2rem;
     color: @header-font;
+    max-width: 95%;
 
     span {
       font-size: 2rem;
@@ -98,6 +73,104 @@
 
     &:hover {
       color: @hover-font;
+    }
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+.cto {
+
+  h1 {
+    @media @tablet {
+      font-size: 6rem;
+    }
+    @media @mobile {
+      font-size: 5rem;
+      letter-spacing: 1.5px;
+    }
+    @media @sm-mobile {
+      font-size: 4rem;
+    }
+
+    #fade1 {
+      @media @tablet {
+        font-size: 1.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 1rem;
+      }
+    }
+    #fade2 {
+      @media @tablet {
+        font-size: 2.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 2rem;
+      }
+    }
+    #fade3 {
+      @media @tablet {
+        font-size: 4rem;
+      }
+      @media @sm-mobile {
+        font-size: 3.5rem;
+      }
+    }
+    #fade4 {
+      @media @tablet {
+        font-size: 4rem;
+      }
+      @media @sm-mobile {
+        font-size: 3.5rem;
+      }
+    }
+    #fade5 {
+      @media @tablet {
+        font-size: 2.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 2rem;
+      }
+    }
+    #fade6 {
+      @media @tablet {
+        font-size: 1.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  h2 {
+    @media @mobile {
+      font-size: 2.5rem;
+    }
+  }
+
+  #cto-statement {
+    @media @lg-tablet {
+      font-size: 2.2rem;
+    }
+    @media @mobile {
+      width: 90%;
+      font-size: 1.8rem;
+    }
+  }
+
+  .cto-btn {
+    @media @mobile {
+      width: 50%;
+      font-size: 1.8rem;
+    }
+  }
+
+  .login {
+    @media @mobile {
+      padding-top: 2rem;
+      font-size: 1.8rem;
     }
   }
 }

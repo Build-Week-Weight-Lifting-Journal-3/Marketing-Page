@@ -34,6 +34,7 @@ ul {
 .cto {
   height: 94vh;
   width: 100%;
+  max-width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -45,21 +46,11 @@ ul {
   text-transform: uppercase;
   color: #8B0000;
 }
-@media (max-width: 800px) {
-  .cto h1 {
-    font-size: 6rem;
-  }
-}
 .cto h1 #fade1 {
   font-size: 2.5rem;
   background: linear-gradient(to right, #0f0f0f, #332424);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media (max-width: 800px) {
-  .cto h1 #fade1 {
-    font-size: 1.5rem;
-  }
 }
 .cto h1 #fade2 {
   font-size: 3.5rem;
@@ -67,21 +58,11 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 800px) {
-  .cto h1 #fade2 {
-    font-size: 2.5rem;
-  }
-}
 .cto h1 #fade3 {
   font-size: 5rem;
   background: linear-gradient(to right, #732222, #8B0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media (max-width: 800px) {
-  .cto h1 #fade3 {
-    font-size: 4rem;
-  }
 }
 .cto h1 #fade4 {
   font-size: 5rem;
@@ -89,32 +70,17 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 800px) {
-  .cto h1 #fade4 {
-    font-size: 4rem;
-  }
-}
 .cto h1 #fade5 {
   font-size: 3.5rem;
   background: linear-gradient(to left, #332424, #732222);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media (max-width: 800px) {
-  .cto h1 #fade5 {
-    font-size: 2.5rem;
-  }
-}
 .cto h1 #fade6 {
   font-size: 2.5rem;
   background: linear-gradient(to left, #0f0f0f, #332424);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-@media (max-width: 800px) {
-  .cto h1 #fade6 {
-    font-size: 1.5rem;
-  }
 }
 .cto h2 {
   padding: 3rem 0;
@@ -124,6 +90,7 @@ ul {
   padding: 8rem 0 5rem;
   font-size: 2rem;
   color: #FFFAF0;
+  max-width: 95%;
 }
 .cto #cto-statement span {
   font-size: 2rem;
@@ -148,6 +115,111 @@ ul {
 .cto .login:hover {
   color: #c60000;
 }
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  .cto h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .cto h1 {
+    font-size: 5rem;
+    letter-spacing: 1.5px;
+  }
+}
+@media (max-width: 400px) {
+  .cto h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 800px) {
+  .cto h1 #fade1 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .cto h1 #fade1 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .cto h1 #fade2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .cto h1 #fade2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .cto h1 #fade3 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .cto h1 #fade3 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .cto h1 #fade4 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .cto h1 #fade4 {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 800px) {
+  .cto h1 #fade5 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .cto h1 #fade5 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .cto h1 #fade6 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .cto h1 #fade6 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .cto h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .cto #cto-statement {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .cto #cto-statement {
+    width: 90%;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .cto .cto-btn {
+    width: 50%;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .cto .login {
+    padding-top: 2rem;
+    font-size: 1.8rem;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -159,7 +231,6 @@ nav {
 }
 nav h3 {
   padding-left: 2rem;
-  display: none;
 }
 nav h3 #nav-fade1 {
   font-size: 1rem;
@@ -200,6 +271,7 @@ nav h3 #nav-fade6 {
 nav .navbar {
   width: 45%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   list-style: none;
@@ -477,7 +549,7 @@ footer {
 }
 @media (max-width: 1000px) {
   html {
-    font-size: 55%;
+    font-size: 56%;
   }
 }
 @media (max-width: 800px) {
