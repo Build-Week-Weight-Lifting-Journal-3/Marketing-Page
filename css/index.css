@@ -111,6 +111,24 @@ ul {
 .fade6 {
   font-size: 2.5rem;
 }
+.member {
+  max-width: 50%;
+  padding-right: 2rem;
+  padding-bottom: 2rem;
+  z-index: 9;
+  display: flex;
+}
+.img-circle {
+  border-radius: 50%;
+  background-color: grey;
+  overflow: hidden;
+  display: flex;
+  transition: 0.5s;
+  border: solid 2px #8B0000;
+}
+.img-circle:hover {
+  border: solid 2px #8B0000;
+}
 .cto {
   height: 94vh;
   width: 100%;
@@ -1111,6 +1129,13 @@ footer {
   font-family: 'Inria Serif', serif;
   font-weight: bold;
   font-size: 2rem;
+}
+.about-page .team .team-list-box .team-list .member {
+  display: flex;
+  max-width: 50%;
+}
+.about-page .team .team-list-box .team-list .member .img-area .img-circle {
+  width: 200px;
 }
 @media (max-width: 1500px) {
   html {
