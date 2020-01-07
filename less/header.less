@@ -13,28 +13,22 @@
     text-transform: uppercase;
     color: @main-accent;
 
-    #fade1 {
-      font-size: 2.5rem;
+    .fade1 {
       .fadeIn(to right, @fadein1, @fadein2);
     }
-    #fade2 {
-      font-size: 3.5rem;
+    .fade2 {
       .fadeIn(to right, @fadein2, @fadein3);
     }
-    #fade3 {
-      font-size: 5rem;
+    .fade3 {
       .fadeIn(to right, @fadein3, @fadein4);
     }
-    #fade4 {
-      font-size: 5rem;
+    .fade4 {
       .fadeIn(to left, @fadein3, @fadein4);
     }
-    #fade5 {
-      font-size: 3.5rem;
+    .fade5 {
       .fadeIn(to left, @fadein2, @fadein3);
     }
-    #fade6 {
-      font-size: 2.5rem;
+    .fade6 {
       .fadeIn(to left, @fadein1, @fadein2);
     }
   }
@@ -52,6 +46,9 @@
     span {
       font-size: 2rem;
       color: @main-accent;
+      font-variant: small-caps;
+      font-family: 'Inria Serif', serif;
+      font-weight: bold;
     }
   }
   .cto-btn {
@@ -98,7 +95,7 @@
       font-size: 4rem;
     }
 
-    #fade1 {
+    .fade1 {
       @media @tablet {
         font-size: 1.5rem;
       }
@@ -106,7 +103,7 @@
         font-size: 1rem;
       }
     }
-    #fade2 {
+    .fade2 {
       @media @tablet {
         font-size: 2.5rem;
       }
@@ -114,7 +111,7 @@
         font-size: 2rem;
       }
     }
-    #fade3 {
+    .fade3 {
       @media @tablet {
         font-size: 4rem;
       }
@@ -122,7 +119,7 @@
         font-size: 3.5rem;
       }
     }
-    #fade4 {
+    .fade4 {
       @media @tablet {
         font-size: 4rem;
       }
@@ -130,7 +127,7 @@
         font-size: 3.5rem;
       }
     }
-    #fade5 {
+    .fade5 {
       @media @tablet {
         font-size: 2.5rem;
       }
@@ -138,7 +135,7 @@
         font-size: 2rem;
       }
     }
-    #fade6 {
+    .fade6 {
       @media @tablet {
         font-size: 1.5rem;
       }

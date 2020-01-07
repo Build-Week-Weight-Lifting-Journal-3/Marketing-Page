@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inria Serif Regular'), local('InriaSerif-Regular'), url(https://fonts.gstatic.com/s/inriaserif/v1/fC1lPYxPY3rXxEndZJAzN3Srdyg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -79,6 +93,24 @@ ul {
   height: 700px;
   background-color: #FFFAF0;
 }
+.fade1 {
+  font-size: 2.5rem;
+}
+.fade2 {
+  font-size: 3.5rem;
+}
+.fade3 {
+  font-size: 5rem;
+}
+.fade4 {
+  font-size: 5rem;
+}
+.fade5 {
+  font-size: 3.5rem;
+}
+.fade6 {
+  font-size: 2.5rem;
+}
 .cto {
   height: 94vh;
   width: 100%;
@@ -94,38 +126,32 @@ ul {
   text-transform: uppercase;
   color: #8B0000;
 }
-.cto h1 #fade1 {
-  font-size: 2.5rem;
+.cto h1 .fade1 {
   background: linear-gradient(to right, #0f0f0f, #332424);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.cto h1 #fade2 {
-  font-size: 3.5rem;
+.cto h1 .fade2 {
   background: linear-gradient(to right, #332424, #732222);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.cto h1 #fade3 {
-  font-size: 5rem;
+.cto h1 .fade3 {
   background: linear-gradient(to right, #732222, #8B0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.cto h1 #fade4 {
-  font-size: 5rem;
+.cto h1 .fade4 {
   background: linear-gradient(to left, #732222, #8B0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.cto h1 #fade5 {
-  font-size: 3.5rem;
+.cto h1 .fade5 {
   background: linear-gradient(to left, #332424, #732222);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.cto h1 #fade6 {
-  font-size: 2.5rem;
+.cto h1 .fade6 {
   background: linear-gradient(to left, #0f0f0f, #332424);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -143,6 +169,9 @@ ul {
 .cto #cto-statement span {
   font-size: 2rem;
   color: #8B0000;
+  font-variant: small-caps;
+  font-family: 'Inria Serif', serif;
+  font-weight: bold;
 }
 .cto .cto-btn {
   text-decoration: none;
@@ -188,62 +217,62 @@ ul {
   }
 }
 @media (max-width: 800px) {
-  .cto h1 #fade1 {
+  .cto h1 .fade1 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 400px) {
-  .cto h1 #fade1 {
+  .cto h1 .fade1 {
     font-size: 1rem;
   }
 }
 @media (max-width: 800px) {
-  .cto h1 #fade2 {
+  .cto h1 .fade2 {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 400px) {
-  .cto h1 #fade2 {
+  .cto h1 .fade2 {
     font-size: 2rem;
   }
 }
 @media (max-width: 800px) {
-  .cto h1 #fade3 {
+  .cto h1 .fade3 {
     font-size: 4rem;
   }
 }
 @media (max-width: 400px) {
-  .cto h1 #fade3 {
+  .cto h1 .fade3 {
     font-size: 3.5rem;
   }
 }
 @media (max-width: 800px) {
-  .cto h1 #fade4 {
+  .cto h1 .fade4 {
     font-size: 4rem;
   }
 }
 @media (max-width: 400px) {
-  .cto h1 #fade4 {
+  .cto h1 .fade4 {
     font-size: 3.5rem;
   }
 }
 @media (max-width: 800px) {
-  .cto h1 #fade5 {
+  .cto h1 .fade5 {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 400px) {
-  .cto h1 #fade5 {
+  .cto h1 .fade5 {
     font-size: 2rem;
   }
 }
 @media (max-width: 800px) {
-  .cto h1 #fade6 {
+  .cto h1 .fade6 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 400px) {
-  .cto h1 #fade6 {
+  .cto h1 .fade6 {
     font-size: 1rem;
   }
 }
@@ -1025,6 +1054,63 @@ footer {
 }
 .programs-page .features {
   padding-bottom: 8rem;
+}
+.about-page .cto {
+  height: 100vh;
+  background-color: #FFFAF0;
+}
+.about-page .cto .header-div {
+  display: flex;
+  align-items: baseline;
+}
+.about-page .cto .header-div h1 {
+  border: solid 2px #8B0000;
+  border-radius: 30px;
+  background-color: #030303;
+  padding: 0 2rem;
+  font-size: 5.2rem;
+}
+.about-page .cto .header-div h1 .fade1 {
+  font-size: 2rem;
+}
+.about-page .cto .header-div h1 .fade2 {
+  font-size: 3rem;
+}
+.about-page .cto .header-div h1 .fade3 {
+  font-size: 4.5rem;
+}
+.about-page .cto .header-div h1 .fade4 {
+  font-size: 4.5rem;
+}
+.about-page .cto .header-div h1 .fade5 {
+  font-size: 3rem;
+}
+.about-page .cto .header-div h1 .fade6 {
+  font-size: 2rem;
+}
+.about-page .cto .header-div .h1-title {
+  font-family: 'Inria Serif', serif;
+  font-size: 4rem;
+  color: #8B0000;
+  padding: 0 1rem;
+  letter-spacing: 2px;
+}
+.about-page .cto h2 {
+  color: #030303;
+  margin-top: 5rem;
+}
+.about-page .cto p {
+  color: #030303;
+  width: 800px;
+  line-height: 1.5;
+  font-size: 1.8rem;
+}
+.about-page .cto p span {
+  color: #8B0000;
+  font-variant: small-caps;
+  font-family: 'Inria Serif', serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
 @media (max-width: 1500px) {
   html {
