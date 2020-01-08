@@ -12,6 +12,13 @@
   font-display: swap;
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Audiowide Regular'), local('Audiowide-Regular'), url(https://fonts.gstatic.com/s/audiowide/v8/l7gdbjpo0cum0ckerWCdlg_L.ttf) format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -110,24 +117,6 @@ ul {
 }
 .fade6 {
   font-size: 2.5rem;
-}
-.member {
-  max-width: 50%;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
-  z-index: 9;
-  display: flex;
-}
-.img-circle {
-  border-radius: 50%;
-  background-color: grey;
-  overflow: hidden;
-  display: flex;
-  transition: 0.5s;
-  border: solid 2px #8B0000;
-}
-.img-circle:hover {
-  border: solid 2px #8B0000;
 }
 .cto {
   height: 94vh;
@@ -828,6 +817,7 @@ nav .navbar #sign-up:hover {
   .tracker .section-container .text-container {
     background: url(../imgs/fitness-man-tanktop.jpg) no-repeat left bottom fixed;
     background-size: cover;
+    border-radius: 10px;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
@@ -851,18 +841,22 @@ nav .navbar #sign-up:hover {
 @media (max-width: 1000px) and (max-width: 1000px) {
   .tracker .section-container .text-container .summary {
     padding-bottom: 2rem;
-    border-top: solid 2px #030303;
-    border-right: solid 2px #030303;
-    border-left: solid 2px #030303;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: solid 2px #8B0000;
+    border-right: solid 2px #8B0000;
+    border-left: solid 2px #8B0000;
     font-size: 1.8rem;
     color: #8B0000;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
   .tracker .section-container .text-container ul {
-    border-bottom: solid 2px #030303;
-    border-right: solid 2px #030303;
-    border-left: solid 2px #030303;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: solid 2px #8B0000;
+    border-right: solid 2px #8B0000;
+    border-left: solid 2px #8B0000;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) and (max-width: 1000px) {
@@ -873,8 +867,9 @@ nav .navbar #sign-up:hover {
 }
 @media (max-width: 1000px) {
   .routines .section-container .text-container {
-    background: url(../imgs/couple-jogging.jpg) no-repeat left bottom fixed;
+    background: url(../imgs/couple-jogging.jpg) no-repeat center bottom fixed;
     background-size: cover;
+    border-radius: 10px;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
@@ -886,7 +881,6 @@ nav .navbar #sign-up:hover {
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
-  .routines .section-container .text-container .summary,
   .routines .section-container .text-container ul {
     background-color: #030303;
     list-style-position: inside;
@@ -896,20 +890,9 @@ nav .navbar #sign-up:hover {
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
-  .routines .section-container .text-container .summary {
-    padding-bottom: 2rem;
-    border-top: solid 2px #030303;
-    border-right: solid 2px #030303;
-    border-left: solid 2px #030303;
-    font-size: 1.8rem;
-    color: #8B0000;
-  }
-}
-@media (max-width: 1000px) and (max-width: 1000px) {
   .routines .section-container .text-container ul {
-    border-bottom: solid 2px #030303;
-    border-right: solid 2px #030303;
-    border-left: solid 2px #030303;
+    border-radius: 10px;
+    border: solid 2px #8B0000;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) and (max-width: 1000px) {
@@ -929,6 +912,7 @@ nav .navbar #sign-up:hover {
   .meal-plans .section-container .text-container {
     background: url(../imgs/meal-plan2.jpg) no-repeat left bottom fixed;
     background-size: cover;
+    border-radius: 10px;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
@@ -952,18 +936,22 @@ nav .navbar #sign-up:hover {
 @media (max-width: 1000px) and (max-width: 1000px) {
   .meal-plans .section-container .text-container .summary {
     padding-bottom: 2rem;
-    border-top: solid 2px #030303;
-    border-right: solid 2px #030303;
-    border-left: solid 2px #030303;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top: solid 2px #8B0000;
+    border-right: solid 2px #8B0000;
+    border-left: solid 2px #8B0000;
     font-size: 1.8rem;
     color: #8B0000;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
   .meal-plans .section-container .text-container ul {
-    border-bottom: solid 2px #030303;
-    border-right: solid 2px #030303;
-    border-left: solid 2px #030303;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: solid 2px #8B0000;
+    border-right: solid 2px #8B0000;
+    border-left: solid 2px #8B0000;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) and (max-width: 1000px) {
@@ -1015,6 +1003,9 @@ nav .navbar #sign-up:hover {
 }
 .team .team-list-box .team-list .member .img-circle:hover {
   border: solid 2px #8B0000;
+}
+.team .team-list-box .team-list .member .img-circle a {
+  display: flex;
 }
 .team .team-list-box .team-list .member .img-circle img {
   opacity: 0.7;
@@ -1070,12 +1061,24 @@ footer {
   color: #030303;
   background-color: #FFFAF0;
 }
+footer p {
+  font-size: 2rem;
+}
 .programs-page .features {
   padding-bottom: 8rem;
 }
 .about-page .cto {
   height: 100vh;
   background-color: #FFFAF0;
+}
+.about-page .cto #back-arrow {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  text-decoration: none;
+  color: #8B0000;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 .about-page .cto .header-div {
   display: flex;
@@ -1086,56 +1089,269 @@ footer {
   border-radius: 30px;
   background-color: #030303;
   padding: 0 2rem;
-  font-size: 5.2rem;
+  font-size: 6.2rem;
 }
 .about-page .cto .header-div h1 .fade1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .about-page .cto .header-div h1 .fade2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .about-page .cto .header-div h1 .fade3 {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
 }
 .about-page .cto .header-div h1 .fade4 {
-  font-size: 4.5rem;
+  font-size: 5.5rem;
 }
 .about-page .cto .header-div h1 .fade5 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .about-page .cto .header-div h1 .fade6 {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+@media (max-width: 800px) {
+  .about-page .cto .header-div h1 {
+    font-size: 5.2rem;
+  }
+  .about-page .cto .header-div h1 .fade1 {
+    font-size: 2rem;
+  }
+  .about-page .cto .header-div h1 .fade2 {
+    font-size: 3rem;
+  }
+  .about-page .cto .header-div h1 .fade3 {
+    font-size: 4.5rem;
+  }
+  .about-page .cto .header-div h1 .fade4 {
+    font-size: 4.5rem;
+  }
+  .about-page .cto .header-div h1 .fade5 {
+    font-size: 3rem;
+  }
+  .about-page .cto .header-div h1 .fade6 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-page .cto .header-div h1 {
+    font-size: 4.2rem;
+  }
+  .about-page .cto .header-div h1 .fade1 {
+    font-size: 1rem;
+  }
+  .about-page .cto .header-div h1 .fade2 {
+    font-size: 2rem;
+  }
+  .about-page .cto .header-div h1 .fade3 {
+    font-size: 3.5rem;
+  }
+  .about-page .cto .header-div h1 .fade4 {
+    font-size: 3.5rem;
+  }
+  .about-page .cto .header-div h1 .fade5 {
+    font-size: 2rem;
+  }
+  .about-page .cto .header-div h1 .fade6 {
+    font-size: 1rem;
+  }
 }
 .about-page .cto .header-div .h1-title {
   font-family: 'Inria Serif', serif;
-  font-size: 4rem;
+  font-size: 7rem;
   color: #8B0000;
   padding: 0 1rem;
   letter-spacing: 2px;
 }
 .about-page .cto h2 {
   color: #030303;
-  margin-top: 5rem;
+  margin-top: 6rem;
+  font-size: 4rem;
 }
 .about-page .cto p {
   color: #030303;
   width: 800px;
   line-height: 1.5;
-  font-size: 1.8rem;
+  font-size: 2.3rem;
 }
 .about-page .cto p span {
   color: #8B0000;
   font-variant: small-caps;
   font-family: 'Inria Serif', serif;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.8rem;
+}
+.about-page .team {
+  background-color: #dfdbd3;
+  width: 100%;
+  border-top: solid 2px #030303;
+  border-bottom: solid 2px #030303;
+}
+.about-page .team .team-list-box {
+  max-width: 100%;
+  width: 100%;
+}
+.about-page .team .team-list-box .team-list {
+  width: 100%;
+  padding-left: 0;
 }
 .about-page .team .team-list-box .team-list .member {
   display: flex;
-  max-width: 50%;
+  max-width: 100%;
+  width: 48%;
+  padding-right: 0;
+  border: solid 2px #030303;
+  border-radius: 30px;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  justify-content: space-between;
+}
+.about-page .team .team-list-box .team-list .member .img-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .about-page .team .team-list-box .team-list .member .img-area .img-circle {
   width: 200px;
+}
+.about-page .team .team-list-box .team-list .member .img-area h3 {
+  font-size: 2.5rem;
+}
+.about-page .team .team-list-box .team-list .member .img-area p {
+  font-size: 2rem;
+}
+.about-page .team .team-list-box .team-list .member .description-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 550px;
+  background-color: #dfdbd3;
+  padding: 2rem 2rem 2.5rem;
+  margin-left: 1.5rem;
+}
+.about-page .team .team-list-box .team-list .member .description-area p {
+  color: #030303;
+  font-size: 2rem;
+}
+.about-page .team .team-list-box .team-list .member .description-area .links-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: baseline;
+}
+.about-page .team .team-list-box .team-list .member .description-area .links-area h2 {
+  color: #030303;
+  font-size: 2.5rem;
+  margin-right: 1rem;
+}
+.about-page .team .team-list-box .team-list .member .description-area .links-area .personal-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 2.5rem;
+}
+.about-page .team .team-list-box .team-list .member .description-area .links-area .personal-links a {
+  margin-right: 1rem;
+  font-size: 3rem;
+  color: #8B0000;
+  text-decoration: none;
+}
+.about-page .team .team-list-box .team-list .member .description-area .links-area .personal-links a:hover {
+  color: #c60000;
+}
+.about-page .team .team-list-box .team-list .member .description-area .links-area .personal-links .website-icon {
+  text-decoration: none;
+  font-family: 'Audiowide', cursive;
+}
+@media (max-width: 500px) {
+  .about-page .team {
+    padding: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .about-page .team .team-list-box .team-list .member {
+    max-width: 100%;
+    width: 80%;
+    margin-bottom: 2.5rem;
+  }
+  .about-page .team .team-list-box .team-list .member .description-area p {
+    font-size: 2.2rem;
+    color: #030303;
+  }
+}
+@media (max-width: 1500px) and (max-width: 1500px) {
+  .about-page .team .team-list-box .team-list .member .description-area {
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 2.5rem;
+  }
+}
+@media (max-width: 1500px) and (max-width: 500px) {
+  .about-page .team .team-list-box .team-list .member .description-area {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1500px) and (max-width: 500px) {
+  .about-page .team .team-list-box .team-list .member .description-area .links-area {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-page .team .team-list-box .team-list .member .description-area .links-area h2 {
+    font-size: 2.8rem;
+    color: #030303;
+  }
+  .about-page .team .team-list-box .team-list .member .description-area .links-area .personal-links {
+    margin-top: 1.5rem;
+  }
+  .about-page .team .team-list-box .team-list .member .description-area .links-area .personal-links a {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1500px) and (max-width: 1500px) {
+  .about-page .team .team-list-box .team-list .member {
+    width: 90%;
+  }
+}
+@media (max-width: 1500px) and (max-width: 800px) {
+  .about-page .team .team-list-box .team-list .member {
+    width: 95%;
+    border-style: none;
+    border-radius: 0;
+    border-bottom: dotted 2px #030303;
+  }
+}
+@media (max-width: 1500px) and (max-width: 500px) {
+  .about-page .team .team-list-box .team-list .member {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 1500px) and (max-width: 500px) {
+  .about-page .team .team-list-box .team-list .member .img-area h3 {
+    font-size: 3.5rem;
+  }
+  .about-page .team .team-list-box .team-list .member .img-area p {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1500px) and (max-width: 800px) {
+  .about-page .team .team-list-box .team-list .member .img-area .img-circle {
+    width: 150px;
+  }
+}
+@media (max-width: 1500px) and (max-width: 500px) {
+  .about-page .team .team-list-box .team-list .member .img-area .img-circle {
+    width: 200px;
+  }
+}
+.about-page .team .team-list-box .team-list #joshua {
+  border-style: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 @media (max-width: 1500px) {
   html {
