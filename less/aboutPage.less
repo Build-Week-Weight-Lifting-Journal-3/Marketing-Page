@@ -1,9 +1,13 @@
 .about-page {
-
+  background-color: @secondary-bg-1;
 // HEADER
   .cto {
-    height: 100vh;
+    height: 94vh;
     background-color: @secondary-bg-1;
+
+    @media @tablet {
+      height: 100vh;
+    }
 
     #back-arrow {
       position: absolute;
@@ -114,6 +118,32 @@
         font-family: 'Inria Serif', serif;
         font-weight: bold;
         font-size: 2.8rem;
+      }
+    }
+  }
+
+  // NAVIGATION
+  nav {
+    background-color: rgba(@secondary-bg-1, .9);
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      a {
+        &:hover {
+          color: @main-bg;
+        }
+      }
+    }
+  }
+
+  // HAMBURGER MENU
+  .menu-cont {
+    .hamburger {
+      div {
+        background-color: @main-bg;
       }
     }
   }
@@ -302,9 +332,11 @@
           }
         }
         #joshua {
-          border-style: none;
-          margin-bottom: 0;
-          padding-bottom: 0;
+          @media @mobile {
+            border-style: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
         }
       }
     }

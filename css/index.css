@@ -321,6 +321,9 @@ nav {
   top: 0;
   z-index: 10;
 }
+nav a {
+  text-decoration: none;
+}
 nav h3 {
   padding-left: 2rem;
 }
@@ -991,7 +994,6 @@ nav .navbar #sign-up:hover {
   max-width: 200px;
   padding-right: 2rem;
   padding-bottom: 2rem;
-  z-index: 9;
 }
 .team .team-list-box .team-list .member .img-circle {
   border-radius: 50%;
@@ -1067,9 +1069,17 @@ footer p {
 .programs-page .features {
   padding-bottom: 8rem;
 }
-.about-page .cto {
-  height: 100vh;
+.about-page {
   background-color: #FFFAF0;
+}
+.about-page .cto {
+  height: 94vh;
+  background-color: #FFFAF0;
+}
+@media (max-width: 800px) {
+  .about-page .cto {
+    height: 100vh;
+  }
 }
 .about-page .cto #back-arrow {
   position: absolute;
@@ -1179,6 +1189,18 @@ footer p {
   font-family: 'Inria Serif', serif;
   font-weight: bold;
   font-size: 2.8rem;
+}
+.about-page nav {
+  background-color: rgba(255, 250, 240, 0.9);
+}
+.about-page nav a {
+  text-decoration: none;
+}
+.about-page nav ul a:hover {
+  color: #030303;
+}
+.about-page .menu-cont .hamburger div {
+  background-color: #030303;
 }
 .about-page .team {
   background-color: #dfdbd3;
@@ -1348,10 +1370,12 @@ footer p {
     width: 200px;
   }
 }
-.about-page .team .team-list-box .team-list #joshua {
-  border-style: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
+@media (max-width: 500px) {
+  .about-page .team .team-list-box .team-list #joshua {
+    border-style: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 1500px) {
   html {
