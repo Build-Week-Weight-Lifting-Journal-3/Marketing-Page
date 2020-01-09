@@ -1081,15 +1081,6 @@ footer p {
     height: 100vh;
   }
 }
-.about-page .cto #back-arrow {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  text-decoration: none;
-  color: #8B0000;
-  font-size: 3rem;
-  text-transform: uppercase;
-}
 .about-page .cto .header-div {
   display: flex;
   align-items: baseline;
