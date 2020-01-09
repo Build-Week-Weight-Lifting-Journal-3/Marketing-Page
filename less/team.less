@@ -1,0 +1,107 @@
+.team {
+  width: 100%;
+  background-color: @secondary-bg-1;
+  padding: 5rem 0;
+  text-align: center;
+  border-top: solid 3px @main-bg;
+
+// TITLE
+  .team-list-box {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+    h1 {
+      font-variant: small-caps;
+      color: @main-accent;
+      font-family: 'Inria Serif', serif;
+      padding-left: 0;
+    }
+
+// LIST
+    .team-list {
+      width: 80%;
+      padding: 5rem 0 0 2rem;
+      display: block;
+      margin: 0 auto;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      .member {
+        max-width: 200px;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+
+        .img-circle {
+          border-radius: 50%;
+          background-color: grey;
+          overflow: hidden;
+          display: flex;
+          transition: .5s;
+          border: solid 2px @main-accent;
+
+          &:hover {
+            border: solid 2px @main-accent;
+          }
+
+          a {
+            display: flex;
+          }
+
+          img {
+            opacity: .7;
+            border-radius: 50%;
+            transition: .5s;
+            width: 100%;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+        h3 {
+          font-size: 1.5rem;
+          font-family: 'Inria Serif', serif;
+        }
+        p {
+          color: @main-bg;
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES
+.team {
+  .team-list-box {
+    h1 {
+      @media @tablet {
+        font-size: 5rem;
+      }
+      @media @mobile {
+        font-size: 4.3rem;
+      }
+      @media @sm-mobile {
+        font-size: 3.5rem;
+      }
+      // Fallback Media Query For Title
+      @media (max-width: 325px) {
+        font-size: 3.2rem;
+      }
+    }
+    .team-list {
+      @media @tablet {
+        width: 100%;
+        padding-left: 1rem;
+      }
+      .member {
+        @media @tablet {
+          width: 150px;
+          padding-right: 1rem;
+        }
+      }
+    }
+  }
+}

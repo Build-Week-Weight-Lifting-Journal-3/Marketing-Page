@@ -1,0 +1,96 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: rgba(@main-bg, .9);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  a {
+    text-decoration: none;
+  }
+
+  h3 {
+    padding-left: 2rem;
+
+    #nav-fade1 {
+      font-size: 1rem;
+      .fadeIn(to right, @fadein1, @fadein2);
+    }
+    #nav-fade2 {
+      font-size: 1.5rem;
+      .fadeIn(to right, @fadein2, @fadein3);
+    }
+    #nav-fade3 {
+      font-size: 2rem;
+      .fadeIn(to right, @fadein3, @fadein4);
+    }
+    #nav-fade4 {
+      font-size: 2rem;
+      .fadeIn(to left, @fadein3, @fadein4);
+    }
+    #nav-fade5 {
+      font-size: 1.5rem;
+      .fadeIn(to left, @fadein2, @fadein3);
+    }
+    #nav-fade6 {
+      font-size: 1rem;
+      .fadeIn(to left, @fadein1, @fadein2);
+    }
+  }
+
+  .navbar {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    letter-spacing: 2px;
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: @main-accent;
+
+      &:hover {
+        color: @hover-font;
+      }
+    }
+    #sign-up {
+      text-decoration: none;
+      border: solid 1px @main-accent;
+      border-radius: 5px;
+      padding: .5rem 2rem;
+      color: @main-accent;
+      align-items: flex-start;
+
+      &:hover {
+        background-color: @hover-bg;
+        color: @hover-font;
+        border-color: @hover-font;
+      }
+    }
+
+/* NAVBAR MEDIA QUERIES */
+    @media @sm-comp {
+      width: 50%;
+    }
+    @media @lg-tablet {
+      width: 60%;
+    }
+    @media @tablet {
+      display: none;
+    }
+  }
+  h3 {
+    @media @tablet {
+      display: none;
+    }
+  }
+  @media @tablet {
+    padding: 0;
+  }
+}

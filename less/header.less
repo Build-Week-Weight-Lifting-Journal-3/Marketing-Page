@@ -1,0 +1,177 @@
+.cto {
+  height: 94vh;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: @main-bg;
+
+  h1 {
+    text-transform: uppercase;
+    color: @main-accent;
+
+    .fade1 {
+      .fadeIn(to right, @fadein1, @fadein2);
+    }
+    .fade2 {
+      .fadeIn(to right, @fadein2, @fadein3);
+    }
+    .fade3 {
+      .fadeIn(to right, @fadein3, @fadein4);
+    }
+    .fade4 {
+      .fadeIn(to left, @fadein3, @fadein4);
+    }
+    .fade5 {
+      .fadeIn(to left, @fadein2, @fadein3);
+    }
+    .fade6 {
+      .fadeIn(to left, @fadein1, @fadein2);
+    }
+  }
+
+  h2 {
+    padding: 3rem 0;
+    color: @header-font;
+  }
+  #cto-statement {
+    padding: 8rem 0 5rem;
+    font-size: 2rem;
+    color: @header-font;
+    max-width: 95%;
+
+    span {
+      font-size: 2rem;
+      color: @main-accent;
+      font-variant: small-caps;
+      font-family: 'Inria Serif', serif;
+      font-weight: bold;
+    }
+  }
+  .cto-btn {
+    text-decoration: none;
+    border: solid 1px @main-accent;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    color: @main-accent;
+    z-index: 1;
+
+    &:hover {
+      background-color: @hover-bg;
+      color: @hover-font;
+      border-color: @hover-font;
+    }
+  }
+  .login {
+    color: @main-accent;
+    padding-top: 1rem;
+    z-index: 1;
+
+    &:hover {
+      color: @hover-font;
+    }
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+.cto {
+  @media @tablet {
+    height: 100vh;
+  }
+  h1 {
+    @media @tablet {
+      font-size: 6rem;
+    }
+    @media @mobile {
+      font-size: 5rem;
+      letter-spacing: 1.5px;
+    }
+    @media @sm-mobile {
+      font-size: 4rem;
+    }
+
+    .fade1 {
+      @media @tablet {
+        font-size: 1.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 1rem;
+      }
+    }
+    .fade2 {
+      @media @tablet {
+        font-size: 2.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 2rem;
+      }
+    }
+    .fade3 {
+      @media @tablet {
+        font-size: 4rem;
+      }
+      @media @sm-mobile {
+        font-size: 3.5rem;
+      }
+    }
+    .fade4 {
+      @media @tablet {
+        font-size: 4rem;
+      }
+      @media @sm-mobile {
+        font-size: 3.5rem;
+      }
+    }
+    .fade5 {
+      @media @tablet {
+        font-size: 2.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 2rem;
+      }
+    }
+    .fade6 {
+      @media @tablet {
+        font-size: 1.5rem;
+      }
+      @media @sm-mobile {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  h2 {
+    @media @mobile {
+      font-size: 2.5rem;
+    }
+  }
+
+  #cto-statement {
+    @media @lg-tablet {
+      font-size: 2.2rem;
+    }
+    @media @mobile {
+      width: 90%;
+      font-size: 1.8rem;
+    }
+  }
+
+  .cto-btn {
+    @media @mobile {
+      width: 50%;
+      font-size: 1.8rem;
+    }
+  }
+
+  .login {
+    @media @mobile {
+      padding-top: 2rem;
+      font-size: 1.8rem;
+    }
+  }
+}

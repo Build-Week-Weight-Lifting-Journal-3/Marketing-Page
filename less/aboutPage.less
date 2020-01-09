@@ -1,0 +1,334 @@
+.about-page {
+  background-color: @secondary-bg-1;
+// HEADER
+  .cto {
+    height: 94vh;
+    background-color: @secondary-bg-1;
+
+    @media @tablet {
+      height: 100vh;
+    }
+
+    .header-div {
+      display: flex;
+      align-items: baseline;
+
+      h1 {
+        border: solid 2px @main-accent;
+        border-radius: 30px;
+        background-color: @main-bg;
+        padding: 0 2rem;
+        font-size: 6.2rem;
+
+        .fade1 {
+          font-size: 3rem;
+        }
+        .fade2 {
+          font-size: 4rem;
+        }
+        .fade3 {
+          font-size: 5.5rem;
+        }
+        .fade4 {
+          font-size: 5.5rem;
+        }
+        .fade5 {
+          font-size: 4rem;
+        }
+        .fade6 {
+          font-size: 3rem;
+        }
+        @media @tablet {
+          font-size: 5.2rem;
+
+          .fade1 {
+            font-size: 2rem;
+          }
+          .fade2 {
+            font-size: 3rem;
+          }
+          .fade3 {
+            font-size: 4.5rem;
+          }
+          .fade4 {
+            font-size: 4.5rem;
+          }
+          .fade5 {
+            font-size: 3rem;
+          }
+          .fade6 {
+            font-size: 2rem;
+          }
+        }
+        @media @mobile {
+          font-size: 4.2rem;
+
+          .fade1 {
+            font-size: 1rem;
+          }
+          .fade2 {
+            font-size: 2rem;
+          }
+          .fade3 {
+            font-size: 3.5rem;
+          }
+          .fade4 {
+            font-size: 3.5rem;
+          }
+          .fade5 {
+            font-size: 2rem;
+          }
+          .fade6 {
+            font-size: 1rem;
+          }
+        }
+      }
+      .h1-title {
+        font-family: 'Inria Serif', serif;
+        font-size: 7rem;
+        color: @main-accent;
+        padding: 0 1rem;
+        letter-spacing: 2px;
+      }
+    }
+    h2 {
+      color: @main-bg;
+      margin-top: 6rem;
+      font-size: 4rem;
+    }
+    p {
+      color: @main-bg;
+      width: 800px;
+      line-height: 1.5;
+      font-size: 2.3rem;
+
+      span {
+        color: @main-accent;
+        font-variant: small-caps;
+        font-family: 'Inria Serif', serif;
+        font-weight: bold;
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  // NAVIGATION
+  nav {
+    background-color: rgba(@secondary-bg-1, .9);
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      a {
+        &:hover {
+          color: @main-bg;
+        }
+      }
+    }
+  }
+
+  // HAMBURGER MENU
+  .menu-cont {
+    .hamburger {
+      div {
+        background-color: @main-bg;
+      }
+    }
+  }
+
+  // TEAM SECTION
+  .team {
+    background-color: @secondary-bg-2;
+    width: 100%;
+    border-top: solid 2px @main-bg;
+    border-bottom: solid 2px @main-bg;
+
+    .team-list-box {
+      max-width: 100%;
+      width: 100%;
+
+      .team-list {
+        width: 100%;
+        padding-left: 0;
+
+        .member {
+          display: flex;
+          max-width: 100%;
+          width: 48%;
+          padding-right: 0;
+          border: solid 2px @main-bg;
+          border-radius: 30px;
+          margin-bottom: 1.5rem;
+          padding: 2rem;
+          justify-content: space-between;
+
+          .img-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .img-circle {
+              width: 200px;
+            }
+            h3 {
+              font-size: 2.5rem;
+            }
+            p {
+              font-size: 2rem;
+            }
+          }
+          .description-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            width: 550px;
+            background-color: @secondary-bg-2;
+            padding: 2rem 2rem 2.5rem;
+            margin-left: 1.5rem;
+
+            p {
+              color: @main-bg;
+              font-size: 2rem;
+            }
+            .links-area {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              width: 100%;
+              align-items: baseline;
+
+              h2 {
+                color: @main-bg;
+                font-size: 2.5rem;
+                margin-right: 1rem;
+              }
+
+              .personal-links {
+                display: flex;
+                justify-content: space-around;
+                align-items: baseline;
+                margin-top: 2.5rem;
+
+                a {
+                  margin-right: 1rem;
+                  font-size: 3rem;
+                  color: @main-accent;
+                  text-decoration: none;
+
+                  &:hover {
+                    color: @hover-font;
+                  }
+                }
+
+                .website-icon {
+                  text-decoration: none;
+                  font-family: 'Audiowide', cursive;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES
+.about-page {
+  .team {
+    @media @mobile {
+      padding: 0;
+    }
+
+    .team-list-box {
+      .team-list {
+        .member {
+          @media @sm-comp {
+            max-width: 100%;
+            width: 80%;
+            margin-bottom: 2.5rem;
+
+            .description-area {
+              @media @sm-comp {
+                max-width: 100%;
+                width: 100%;
+                padding-bottom: 2.5rem;
+              }
+              @media @mobile {
+                margin-left: 0;
+              }
+
+              p {
+                font-size: 2.2rem;
+                color: @main-bg;
+              }
+              .links-area {
+                @media @mobile {
+                  width: 100%;
+                  flex-direction: column;
+                  align-items: center;
+
+                  h2 {
+                    font-size: 2.8rem;
+                    color: @main-bg;
+                  }
+                  .personal-links {
+                    margin-top: 1.5rem;
+
+                    a {
+                      font-size: 4rem;
+                    }
+                  }
+                }
+              }
+            }
+            @media @sm-comp {
+              width: 90%;
+            }
+            @media @tablet{
+              width: 95%;
+              border-style: none;
+              border-radius: 0;
+              border-bottom: dotted 2px @main-bg;
+            }
+            @media @mobile {
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+            }
+
+            .img-area {
+              @media @mobile {
+                h3 {
+                  font-size: 3.5rem;
+                }
+                p {
+                  font-size: 3rem;
+                }
+              }
+              .img-circle {
+                @media @tablet {
+                  width: 150px;
+                }
+                @media @mobile {
+                  width: 200px;
+                }
+              }
+            }
+          }
+        }
+        #joshua {
+          @media @mobile {
+            border-style: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
