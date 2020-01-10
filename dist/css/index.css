@@ -839,8 +839,6 @@ nav .navbar #sign-up:hover {
 }
 @media (max-width: 1000px) and (max-width: 500px) {
   .tracker .section-container .text-container {
-    background: url(../imgs/fitness-man-tanktop.jpg) no-repeat center bottom fixed;
-    background-size: cover;
     border-radius: 0;
   }
 }
