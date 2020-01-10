@@ -837,6 +837,13 @@ nav .navbar #sign-up:hover {
     text-shadow: -1px -1px 0 #8B0000, 1px -1px 0 #8B0000, -1px 1px 0 #8B0000, 1px 1px 0 #8B0000;
   }
 }
+@media (max-width: 1000px) and (max-width: 500px) {
+  .tracker .section-container .text-container {
+    background: url(../imgs/fitness-man-tanktop.jpg) no-repeat left bottom fixed;
+    background-size: cover;
+    border-radius: 0;
+  }
+}
 @media (max-width: 1000px) and (max-width: 1000px) {
   .tracker .section-container .text-container .summary,
   .tracker .section-container .text-container ul {
@@ -889,6 +896,13 @@ nav .navbar #sign-up:hover {
     text-shadow: -1px -1px 0 #8B0000, 1px -1px 0 #8B0000, -1px 1px 0 #8B0000, 1px 1px 0 #8B0000;
   }
 }
+@media (max-width: 1000px) and (max-width: 500px) {
+  .routines .section-container .text-container {
+    background: url(../imgs/couple-jogging.jpg) no-repeat left bottom fixed;
+    background-size: cover;
+    border-radius: 0;
+  }
+}
 @media (max-width: 1000px) and (max-width: 1000px) {
   .routines .section-container .text-container ul {
     background-color: #030303;
@@ -930,6 +944,13 @@ nav .navbar #sign-up:hover {
     margin-bottom: 5rem;
     color: #FFFAF0;
     text-shadow: -1px -1px 0 #8B0000, 1px -1px 0 #8B0000, -1px 1px 0 #8B0000, 1px 1px 0 #8B0000;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  .meal-plans .section-container .text-container {
+    background: url(../imgs/meal-plan2.jpg) no-repeat left bottom fixed;
+    background-size: cover;
+    border-radius: 0;
   }
 }
 @media (max-width: 1000px) and (max-width: 1000px) {
