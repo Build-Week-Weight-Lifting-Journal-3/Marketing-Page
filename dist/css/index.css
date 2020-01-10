@@ -187,19 +187,23 @@ ul {
   padding: 1rem 3rem;
   color: #8B0000;
   z-index: 1;
+  transition: 0.25s;
 }
 .cto .cto-btn:hover {
   background-color: #080808;
   color: #c60000;
   border-color: #c60000;
+  font-size: 1.75rem;
 }
 .cto .login {
   color: #8B0000;
   padding-top: 1rem;
   z-index: 1;
+  transition: 0.25s;
 }
 .cto .login:hover {
   color: #c60000;
+  font-size: 1.75rem;
 }
 /* MEDIA QUERIES */
 @media (max-width: 800px) {
@@ -377,9 +381,11 @@ nav .navbar a {
   text-decoration: none;
   text-transform: uppercase;
   color: #8B0000;
+  transition: 0.25s ease;
 }
 nav .navbar a:hover {
   color: #c60000;
+  font-size: 1.75rem;
 }
 nav .navbar #sign-up {
   text-decoration: none;
